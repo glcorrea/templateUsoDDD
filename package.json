@@ -1,15 +1,16 @@
 {
   "devDependencies": {
-    "@swc/cli": "^0.7.8",
-    "@swc/core": "^1.14.0",
-    "@swc/jest": "^0.2.39",
-    "@types/jest": "^30.0.0",
-    "jest": "^30.2.0",
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.148",
+    "@swc/jest": "^0.2.20",
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
     "ts-node": "^10.9.2",
     "tslint": "^5.20.1",
     "typescript": "^5.9.3"
   },
   "scripts": {
-    "test": "jest"
+    "test": "npm run tsc --Emit && jest",
+    "tsc": "tsc"
   }
 }

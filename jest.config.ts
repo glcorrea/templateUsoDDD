@@ -4,13 +4,6 @@
  */
 
 export default {
-  
-  testEnvironment: "node",
-  
-  testMatch: [
-    "**/?(*.)+(spec|test).[tj]s?(x)"
-  ],
-  
   transform: {
     "^.+\.(t|j)sx?$": ["@swc/jest"],
     

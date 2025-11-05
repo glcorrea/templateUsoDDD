@@ -100,5 +100,5 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "src/entity/product.spec.ts.bk", "src/entity/customer.spec.ts.bk", "src/entity/order.spec.ts.bk"  ],
 }
