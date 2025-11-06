@@ -3,6 +3,7 @@
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.148",
     "@swc/jest": "^0.2.20",
+    "@types/uuid": "^8.3.4",
     "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
     "ts-node": "^10.9.2",
@@ -12,5 +13,8 @@
   "scripts": {
     "test": "npm run tsc --Emit && jest",
     "tsc": "tsc"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
   }
 }

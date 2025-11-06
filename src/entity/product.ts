@@ -7,6 +7,7 @@ export default class Product {
     constructor(id: string, name: string, price: number){
         this._id = id;
         this._name = name;
+        this._price = price;
         this.validate();
     }
 
