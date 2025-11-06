@@ -37,7 +37,7 @@ export default class Customer{
     }
 
     get rewardPoints(): number{
-        return
+        return this._rewardPoints;
     }
 
     changeName(name: string){
