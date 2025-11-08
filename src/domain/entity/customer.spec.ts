@@ -30,14 +30,14 @@ import Customer from "./customer";
         it("Should activate customer", () => {
             // Arrange
             const customer = new Customer("1", "John");
-            const address = new Address("Rua 123", "1", "", "São Paulo", "SP", "1234-345")
+            const address = new Address("Rua 123", 1, "", "São Paulo", "SP", "1234-345")
 
             // Act
             customer.Address = address
             customer.activate();
            
             // Assert
-            expect(customer.isActivate()).toBe(true);
+            expect(customer.isActive()).toBe(true);
         });
 
 
@@ -60,7 +60,7 @@ import Customer from "./customer";
             customer.deactivate();
            
             // Assert
-            expect(customer.isActivate()).toBe(false);
+            expect(customer.isActive()).toBe(false);
         });
 
         it ("should add reward points", () => {

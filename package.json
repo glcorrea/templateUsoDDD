@@ -3,8 +3,8 @@
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.148",
     "@swc/jest": "^0.2.20",
-    "@types/uuid": "^8.3.4",
     "@types/jest": "^27.4.1",
+    "@types/uuid": "^8.3.4",
     "jest": "^27.5.1",
     "ts-node": "^10.9.2",
     "tslint": "^5.20.1",
@@ -15,6 +15,10 @@
     "tsc": "tsc"
   },
   "dependencies": {
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.7",
+    "sequelize-typescript": "^2.1.6",
+    "sqlite3": "^5.1.7",
     "uuid": "^8.3.2"
   }
 }

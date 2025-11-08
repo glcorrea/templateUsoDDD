@@ -1,12 +1,12 @@
 export default class Address {
     _street: string;
-    _number: string;
+    _number: number;
     _complement: string;
     _city: string; 
     _state: string; 
     _zipCode: string;
 
-    constructor(street: string, number: string, complement: string, city: string, state: string, zipCode: string){
+    constructor(street: string, number: number, complement: string, city: string, state: string, zipCode: string){
         this._street = street;
         this._number = number;
         this._complement = complement;
@@ -17,12 +17,38 @@ export default class Address {
         this.validate();
     }
 
+
+    get street(): string {
+        return this._street;
+    }
+
+    get number(): number {
+        return this._number;
+    }
+
+    get complement(): string {
+        return this._complement;
+    }
+   
+
+    get city(): string {
+        return this._city;
+    }
+
+    get state(): string {
+        return this._state;
+    }
+
+     get zipCode(): string {
+        return this._zipCode;
+    }
+
     validate(){
         if (this._street.length === 0) {
             throw new Error("Cidade é obrigatório");
         }
 
-        if (this._number.length === 0) {
+        if (this._number === 0) {
             throw new Error("Número é obrigatório");
         }
 
